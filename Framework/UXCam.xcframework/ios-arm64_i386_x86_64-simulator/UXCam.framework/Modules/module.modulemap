@@ -1,0 +1,6 @@
+framework module UXCam {
+  umbrella header "UXCam.h"
+
+  export *
+  module * { export * }
+}
