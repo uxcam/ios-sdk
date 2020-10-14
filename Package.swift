@@ -1,23 +1,31 @@
 // swift-tools-version:5.3
 import PackageDescription
+
 let package = Package(
+    
     name: "UXCam",
-    platforms: [
+    
+    platforms: 
+    [
         .iOS(.v9)
     ],
-    products: [
+    
+    products: 
+    [
         .library(
             name: "UXCam", 
             targets: ["UXCam"])
     ],
     
-    targets: [
+    targets: 
+    [
         .binaryTarget(
             name: "UXCam", 
             path: "Framework/UXCam.xcframework")
     ],
     
-    linkerSettings: [
+    linkerSettings: 
+    [
 		.linkedFramework("AVFoundation"),
 		.linkedFramework("CoreGraphics"),
         .linkedFramework("CoreMedia"),
@@ -29,6 +37,7 @@ let package = Package(
         .linkedFramework("SystemConfiguration"),
         .linkedFramework("WebKit"),
         .linkedLibrary("z"),
-        .linkedLibrary("iconv"),
-	])
+        .linkedLibrary("iconv")
+	]
+)
         
