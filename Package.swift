@@ -21,23 +21,23 @@ let package = Package(
     [
         .binaryTarget(
             name: "UXCam", 
-            path: "Framework/UXCam.xcframework")
-    ],
+            path: "Framework/UXCam.xcframework"),
     
-    linkerSettings: 
-    [
-		.linkedFramework("AVFoundation"),
-		.linkedFramework("CoreGraphics"),
-        .linkedFramework("CoreMedia"),
-        .linkedFramework("CoreVideo"),
-        .linkedFramework("CoreTelephony"),
-        .linkedFramework("MobileCoreServices"),
-        .linkedFramework("QuartzCore"),
-        .linkedFramework("Security"),
-        .linkedFramework("SystemConfiguration"),
-        .linkedFramework("WebKit"),
-        .linkedLibrary("z"),
-        .linkedLibrary("iconv")
-	]
+	    linkerSettings: 
+		[
+			.linkedFramework("AVFoundation"),
+			.linkedFramework("CoreGraphics"),
+			.linkedFramework("CoreMedia"),
+			.linkedFramework("CoreVideo"),
+			.linkedFramework("CoreTelephony"),
+			.linkedFramework("MobileCoreServices"),
+			.linkedFramework("QuartzCore"),
+			.linkedFramework("Security"),
+			.linkedFramework("SystemConfiguration"),
+			.linkedFramework("WebKit"),
+			.linkedLibrary("z"),
+			.linkedLibrary("iconv")
+		]
+    ]
 )
         
