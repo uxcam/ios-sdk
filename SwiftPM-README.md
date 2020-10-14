@@ -11,7 +11,7 @@ Starting with the 3.3.0 release UXCam for iOS supports installation via [Swift P
 
 File -> Swift Packages -> Add Package Dependency
 
-<img src="docs/resources/SPM-add-package.png" width="500">
+<img src="docs/resources/SPM-add-package.jpg" width="500">
 
 Select this repository as the URL - https://github.com/uxcam/ios-sdk
 
