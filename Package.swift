@@ -25,7 +25,7 @@ let package = Package(
       			[
 			        .target(name: "UXCamFW", condition: .when(platforms: .some([.iOS])))
 				],
-				path: "UXCamWrapper"
+				path: "UXCamWrapper",
 				linkerSettings: 
 				[
 					.linkedFramework("AVFoundation"),
