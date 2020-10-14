@@ -14,30 +14,39 @@ let package = Package(
     [
         .library(
             name: "UXCam", 
-            targets: ["UXCam"])
+            targets: ["UXCamWrapper"])
     ],
     
     targets: 
     [
+		.target(
+				name: "UXCamWrapper",
+		    	dependencies: 
+      			[
+			        .target(name: "UXCamFW", condition: .when(platforms: .some([.iOS])))
+				],
+				linkerSettings: 
+				[
+					.linkedFramework("AVFoundation"),
+					.linkedFramework("CoreGraphics"),
+					.linkedFramework("CoreMedia"),
+					.linkedFramework("CoreVideo"),
+					.linkedFramework("CoreTelephony"),
+					.linkedFramework("MobileCoreServices"),
+					.linkedFramework("QuartzCore"),
+					.linkedFramework("Security"),
+					.linkedFramework("SystemConfiguration"),
+					.linkedFramework("WebKit"),
+					.linkedLibrary("z"),
+					.linkedLibrary("iconv")
+				]
+		),
+		
         .binaryTarget(
-            name: "UXCam", 
+            name: "UXCamFW", 
             path: "Framework/UXCam.xcframework"),
     
-	    linkerSettings: 
-		[
-			.linkedFramework("AVFoundation"),
-			.linkedFramework("CoreGraphics"),
-			.linkedFramework("CoreMedia"),
-			.linkedFramework("CoreVideo"),
-			.linkedFramework("CoreTelephony"),
-			.linkedFramework("MobileCoreServices"),
-			.linkedFramework("QuartzCore"),
-			.linkedFramework("Security"),
-			.linkedFramework("SystemConfiguration"),
-			.linkedFramework("WebKit"),
-			.linkedLibrary("z"),
-			.linkedLibrary("iconv")
-		]
+	    
     ]
 )
         
