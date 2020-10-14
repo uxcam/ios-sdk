@@ -3,15 +3,15 @@ import PackageDescription
 let package = Package(
     name: "UXCam",
     platforms: [
-        .iOS(.v09)
+        .iOS(.v9)
     ],
     products: [
         .library(
-            name: "MyFramework", 
-            targets: ["MyFramework"])
+            name: "UXCam", 
+            targets: ["UXCam"])
     ],
     targets: [
         .binaryTarget(
-            name: "MyFramework", 
-            path: "MyFramework.xcframework")
+            name: "UXCam", 
+            path: "Framework/UXCam.xcframework")
     ])
