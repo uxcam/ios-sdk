@@ -45,7 +45,10 @@ let package = Package(
 		
         .binaryTarget(
             name: "UXCamFW", 
-            path: "Framework/UXCam.xcframework")
+            //path: "Framework/UXCam.xcframework"
+			url: "https://github.com/uxcam/ios-sdk/UXCam.xcframework.zip",
+			checksum: "1179d7d02396e5c3584830a5924ee6078e956e3a1f15cad96af1f71de2c5b6a1"
+		)
     ]
 )
         
