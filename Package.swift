@@ -13,19 +13,18 @@ let package = Package(
     products: 
     [
         .library(
-            name: "UXCam", 
-            targets: ["UXCamWrapper"])
+			name: "UXCam",
+            targets: ["UXCamWrapper", "UXCamFW"]
+		)
     ],
     
     targets: 
     [
+		// 'UXCamWrapper' target is a way to include the necessary linkerSettings that the binary XCFramework in UXCamFW requires.
 		.target(
 				name: "UXCamWrapper",
-		    	dependencies: 
-      			[
-			        .target(name: "UXCamFW", condition: .when(platforms: .some([.iOS])))
-				],
 				path: "UXCamWrapper",
+				exclude: ["README.md"],
 				linkerSettings: 
 				[
 					.linkedFramework("AVFoundation"),
