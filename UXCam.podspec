@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name     = 'UXCam'
-  s.version  = '3.3.0-alpha.2'
+  s.version  = '3.3.0-alpha.3'
   s.summary = "UXCam SDK for iOS applications"
   s.description = <<-DESC
                   Visit https://uxcam.com/ to get a key.
-                  This is version 3.3.0-alpha.2 of the SDK - see CHANGELOG for details
+                  This is version #{s.version} of the SDK - see CHANGELOG for details
                   DESC
   s.homepage = "https://uxcam.com/"
   s.license      = {
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/uxcam/ios-sdk.git", :tag => "#{s.version}" }
   s.platform = :ios, 9.0
   s.requires_arc = true
-  s.vendored_frameworks = 'Framework/UXCam.xcframework'
+  s.vendored_frameworks = 'UXCam.xcframework.zip'
   s.static_framework = true
   s.libraries = 'z', 'iconv'
   s.frameworks     = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'CoreTelephony', 'MobileCoreServices', 'QuartzCore', 'SystemConfiguration', 'Security', 'WebKit'
