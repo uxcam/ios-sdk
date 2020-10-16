@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/uxcam/ios-sdk.git", :tag => "#{s.version}" }
   s.platform = :ios, 9.0
   s.requires_arc = true
-  s.vendored_frameworks = 'UXCam.xcframework.zip'
+  s.vendored_frameworks = 'Framework/UXCam.xcframework'
   s.static_framework = true
   s.libraries = 'z', 'iconv'
   s.frameworks     = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'CoreTelephony', 'MobileCoreServices', 'QuartzCore', 'SystemConfiguration', 'Security', 'WebKit'
