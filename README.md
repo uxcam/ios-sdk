@@ -8,7 +8,7 @@ This is the UXCam iOS SDK
 
 Add the following to your Podfile:
 
-`pod 'UXCam`
+`pod 'UXCam'`
 
 and run `pod update` and you should be good to go.
 
