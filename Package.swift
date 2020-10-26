@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "3.3.0-alpha.5"
+let version = "3.3.0-alpha.6"
 
 let package = Package(
     
@@ -16,7 +16,7 @@ let package = Package(
     [
         .library(
 			name: "UXCam",
-            targets: ["UXCamWrapper", "UXCamFW"]
+            targets: ["UXCamWrapper", "UXCam"]
 		)
     ],
     
@@ -45,7 +45,7 @@ let package = Package(
 		),
 		
         .binaryTarget(
-            name: "UXCamFW", 
+            name: "UXCam",
             //path: "Framework/UXCam.xcframework"
 			//url: "https://github.com/uxcam/ios-sdk/UXCam.xcframework.zip",
 			url: "https://raw.githubusercontent.com/uxcam/ios-sdk/\(version)/UXCam.xcframework.zip",
