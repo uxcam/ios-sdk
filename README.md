@@ -63,6 +63,7 @@ Documentation on using the various API methods can be found [here](https://help.
 ## Acknowledgements
 
 Thanks to:
+
  [Anurag Ajwani](https://medium.com/@anuragajwani) for a series of excellent articles on building and distributing XCFrameworks.
  
  [Boris Bielik](https://forums.swift.org/t/swiftpm-binary-target-with-sub-dependencies/40197/7) for the post on how to get SPM working with binary targets and dependencies.
