@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "3.3.0-alpha.6"
+let version = "3.3.0"
 
 let package = Package(
     
