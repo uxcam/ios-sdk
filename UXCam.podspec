@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     			= 'UXCam'
-  s.version  			= '3.3.0'
+  s.version  			= '3.3.1'
   
   s.summary 			= "UXCam SDK for iOS applications"
   s.description 		= <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      		= {
     :type => 'Commercial',
     :text => <<-LICENSE
-                Copyright (c) 2013-2020, UXCam Inc.
+                Copyright (c) 2013-2021, UXCam Inc.
                 All rights reserved.
     LICENSE
   }
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.social_media_url 	= "https://www.twitter.com/uxcam"
   s.documentation_url 	= 'https://help.uxcam.com/hc/en-us/categories/360001001392-Tailor-for-Success'
   
-  s.platform 			= :ios, 9.0
+  s.platform 			= :ios, 10.0
 
   s.source 				= { :http => "https://raw.githubusercontent.com/uxcam/ios-sdk/#{s.version}/UXCam.xcframework.zip" }
   s.vendored_frameworks = 'UXCam.xcframework'
