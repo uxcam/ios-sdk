@@ -15,6 +15,8 @@ and run `pod update` and you should be good to go.
 
 ## Using Swift Package Manager
 
+[NB: Due to issues such as https://forums.swift.org/t/swiftpm-binarytarget-dependency-and-code-signing/38953/38 you will be unable to ship to AppStore using the SPM for UXCam, so please continue with CocoaPods until XCode/SPM is fixed]
+
 Starting with the 3.3.0 release UXCam for iOS supports installation via [Swift Package Manager](https://swift.org/package-manager/) in Beta status. Please report any problems here.
 
 ## Limitations
@@ -22,6 +24,7 @@ Starting with the 3.3.0 release UXCam for iOS supports installation via [Swift P
 - Requires Xcode 12.
 
 Follow the instructions [here](SwiftPM-README.md)
+[NB: on Version 12.2 (12B45b) on macOS 10.15.7 (19H15) picking to resolve to a version is crashing XCode. Pick 'main' branch for a working integration.]
 
 # Integration
 
