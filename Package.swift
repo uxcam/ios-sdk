@@ -49,7 +49,7 @@ let package = Package(
             //path: "Framework/UXCam.xcframework"
 			//url: "https://github.com/uxcam/ios-sdk/UXCam.xcframework.zip",
 			url: "https://raw.githubusercontent.com/uxcam/ios-sdk/\(version)/UXCam.xcframework.zip",
-			checksum: "35afa7b0fd5f22309591f053c1edb9a043d1f1a871483987c0e5a318854359c3"
+			checksum: "23d8ff17be661952a93547703bdafbd34e81d402fb06689540e6cc7db89574f1"
 		)
     ]
 )
