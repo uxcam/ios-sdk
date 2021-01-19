@@ -4,6 +4,8 @@ This is the UXCam iOS SDK
 
 # To install
 
+[NB: If you are currently using version 3.2.6 or earlier please do a deep clean of your build environment before updating. XCode has exhibited some issues with the change from a .framework packaged library to .xcframework]
+
 ## Using [Cocoapods](https://cocoapods.org/)
 
 Add the following to your Podfile:
