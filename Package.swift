@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "3.3.6"
+let version = "3.3.7"
 
 let package = Package(
     
@@ -49,7 +49,7 @@ let package = Package(
             //path: "Framework/UXCam.xcframework"
 			//url: "https://github.com/uxcam/ios-sdk/UXCam.xcframework.zip",
 			url: "https://raw.githubusercontent.com/uxcam/ios-sdk/\(version)/UXCam.xcframework.zip",
-			checksum: "fbde0861c4a8e6c02decbded950a01d0d405e880ff0188ad4dd14691879700db"
+			checksum: "e863fd5a46839cab3f6c937dfc017c87f138ef6775fc00151aefe4ce2bc26b27"
 		)
     ]
 )
