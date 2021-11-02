@@ -1,33 +1,33 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "3.3.8"
+let version = "3.3.9"
 
 let package = Package(
-    
+
     name: "UXCam",
-    
-    platforms: 
+
+    platforms:
     [
         .iOS(.v9)
     ],
-    
-    products: 
+
+    products:
     [
         .library(
 			name: "UXCam",
             targets: ["UXCamWrapper", "UXCam"]
 		)
     ],
-    
-    targets: 
+
+    targets:
     [
 		// 'UXCamWrapper' target is a way to include the necessary linkerSettings that the binary XCFramework in UXCamFW requires.
 		.target(
 				name: "UXCamWrapper",
 				path: "UXCamWrapper",
 				exclude: ["README.md"],
-				linkerSettings: 
+				linkerSettings:
 				[
 					.linkedFramework("AVFoundation"),
 					.linkedFramework("CoreGraphics"),
@@ -43,14 +43,14 @@ let package = Package(
 					.linkedLibrary("iconv")
 				]
 		),
-		
+
         .binaryTarget(
             name: "UXCam",
             //path: "Framework/UXCam.xcframework"
 			//url: "https://github.com/uxcam/ios-sdk/UXCam.xcframework.zip",
 			url: "https://raw.githubusercontent.com/uxcam/ios-sdk/\(version)/UXCam.xcframework.zip",
-			checksum: "c1d9cee93da65a4041b51a72ba2635ed614ce1ffd63f3e6829a1938590d0b5dc"
+			checksum: "6f6f12c3497611affb65d1ebc093ecd36c0bd92153036abe8a431f9d65b38820"
 		)
     ]
 )
-        
+

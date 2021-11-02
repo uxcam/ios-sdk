@@ -1,11 +1,11 @@
 ## Using Swift Package Manager
 
-Starting with the 3.3.0 release UXCam for iOS supports installation via [Swift Package Manager](https://swift.org/package-manager/) in Beta status. Please report any problems here.
+Starting with the 3.3.0 release UXCam for iOS supports installation via [Swift Package Manager](https://swift.org/package-manager/)
 
 
 ## Limitations
 
-- Requires Xcode 12.
+- Requires Xcode 12.4 or newer
 
 ### In Xcode
 
