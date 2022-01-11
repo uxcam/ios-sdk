@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     			= 'UXCam'
-  s.version  			= '3.4.0-beta.4'
+  s.version  			= '3.4.0-beta.5'
   
   s.summary 			= "UXCam SDK for iOS applications"
   s.description 		= <<-DESC
