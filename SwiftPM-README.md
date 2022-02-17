@@ -5,7 +5,7 @@ Starting with the 3.3.0 release UXCam for iOS supports installation via [Swift P
 
 ## Limitations
 
-- Requires Xcode 12.4 or newer
+- Requires Xcode 13.0 or newer from version 3.4.0
 
 ### In Xcode
 

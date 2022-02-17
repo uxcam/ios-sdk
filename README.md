@@ -19,11 +19,9 @@ NB: Make sure you are using Cocoapods version 1.10.0 or higher - earlier version
 
 ## Using Swift Package Manager
 
-[NB: Due to issues such as https://forums.swift.org/t/swiftpm-binarytarget-dependency-and-code-signing/38953/38 you will be unable to ship to AppStore using the SPM for UXCam, so please continue with CocoaPods until XCode/SPM is fixed]
-
 Starting with the 3.3.0 release UXCam for iOS supports installation via [Swift Package Manager](https://swift.org/package-manager/) in Beta status. Please report any problems here.
 
-## Limitations
+## Using SPM
 
 Follow the instructions [here](SwiftPM-README.md)
 
@@ -42,7 +40,8 @@ and in your `application:didFinishLaunchingWithOptions:` method add:
 
 ```objective-c
 	[UXCam optIntoSchematicRecordings];
-	[UXCam startWithKey:@"App-key from UXCam"]; 
+	UXCamConfiguration *configuration = [[UXCamConfiguration alloc] initWithAppKey:@"YourAppKey"];
+	[UXCam startWithConfiguration: configuration];
 ```
 
 ## Swift
@@ -55,7 +54,8 @@ and in your `func application(_ application: UIApplication, didFinishLaunchingWi
 
 ```swift
 	UXCam.optIntoSchematicRecordings()
-	UXCam.start(withKey:"App-key from UXCam")
+	let configuration = UXCamConfiguration(apKey: "YourAppKey")
+	UXCam.start(with: configuration)
 ```
 
 
