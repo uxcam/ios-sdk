@@ -1,8 +1,8 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "3.5.1"
-let checksum = "7fb32b695d1ca9624e995861bca7635f4ce7e30b0e7245e5497fdd6ae43e1d33"
+let version = "3.5.2"
+let checksum = "5fc6217205ef77c2d9345457f2fe31e84bb1f8d80d5fc303cf100df8470a9bb8"
 let repoName = "ios-sdk"
 
 let package = Package(
@@ -11,7 +11,7 @@ let package = Package(
 
     platforms:
     [
-        .iOS(.v9)
+        .iOS(.v10)
     ],
 
     products:
@@ -42,7 +42,8 @@ let package = Package(
                     .linkedFramework("SystemConfiguration"),
                     .linkedFramework("WebKit"),
                     .linkedLibrary("z"),
-                    .linkedLibrary("iconv")
+                    .linkedLibrary("iconv"),
+                    .linkedLibrary("c++")
                 ]
         ),
 
