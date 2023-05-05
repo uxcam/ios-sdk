@@ -1,8 +1,8 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "3.6.1"
-let checksum = "52f279d629e20bc3daca31c4bba1d7524778bf36e527d2d13090c52b14021647"
+let version = "3.6.2"
+let checksum = "c8f380b75ed823a59e8ea9ed0fa95d903a6387d05f611315324771d82f5023db"
 let repoName = "ios-sdk"
 
 let package = Package(
