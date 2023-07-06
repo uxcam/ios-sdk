@@ -54,7 +54,7 @@ and in your `func application(_ application: UIApplication, didFinishLaunchingWi
 
 ```swift
 	UXCam.optIntoSchematicRecordings()
-	let configuration = UXCamConfiguration(apKey: "YourAppKey")
+	let configuration = UXCamConfiguration(appKey: "YourAppKey")
 	UXCam.start(with: configuration)
 ```
 
