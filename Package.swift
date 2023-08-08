@@ -2,7 +2,7 @@
 import PackageDescription
 
 let version = "3.6.4"
-let checksum = "a43e6e663ed8cfbe74a504afaa02d4f84d3120d3ddbc882e8a37723360e15915"
+let checksum = "3f6900faf842073f3fa1f1aa59ebf287d378a874b732a67dafc609df9571eb22"
 let repoName = "ios-sdk"
 
 let package = Package(

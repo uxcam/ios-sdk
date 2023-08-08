@@ -10,14 +10,14 @@ Pod::Spec.new do |s|
   s.homepage             = "https://uxcam.com/"
   s.license              = {
     'type' => 'Copyright',
-    'text' => 'Copyright (c) 2013-2022, UXCam Inc. All rights reserved.'
+    'text' => 'Copyright (c) 2013-2023, UXCam Inc. All rights reserved.'
   }
 
   s.author               = { 'UXCam' => 'admin@uxcam.com' }
   s.social_media_url     = "https://www.twitter.com/uxcam"
   s.documentation_url     = 'https://developer.uxcam.com/docs'
   
-  s.platform             = :ios, 10.0
+  s.platform             = :ios, 11.0
 
   s.source                 = { :http => "https://raw.githubusercontent.com/uxcam/ios-sdk/#{s.version}/UXCam.xcframework.zip" }
   s.vendored_frameworks = 'UXCam.xcframework'
