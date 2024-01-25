@@ -1,3 +1,7 @@
+# ⚠️ Deprecated ⚠️
+
+This repository is deprecated and will no longer be supported for future SDK versions. Please migrate to our newer repository at [uxcam-ios-sdk](https://github.com/uxcam/uxcam-ios-sdk)
+
 # UXCam iOS SDK
 
 This is the UXCam iOS SDK
